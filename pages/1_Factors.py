@@ -2,9 +2,10 @@
 import streamlit as st
 # import matplotlib.pyplot as plt
 
+st.header("What is Phishing?")
+st.markdown("<p>Phishing is a type of online scam where an attacker sends an email, message, or creates a website that looks legitimate and tries to trick the recipient into revealing sensitive information such as usernames, passwords, or credit card numbers. Phishing attacks often use social engineering tactics to persuade the victim to click on a link or open an attachment that contains malware or directs them to a fake website that looks like a legitimate one. Once the victim enters their information, the attacker can use it for various purposes, including identity theft, financial fraud, or unauthorized access to sensitive information. Phishing attacks can be sophisticated and difficult to detect, which is why it's important to be vigilant and take precautions to protect your personal information online.</p>",unsafe_allow_html=True)
 
-
-st.header("Factors Effecting the Detection of Phishing")
+st.subheader("Factors Effecting the Detection of Phishing")
 
 #data = pd.read_csv("processedData.csv")
 length, characters, abnormal, https, cnum, ip, domain, subdomain, tld, fld, short, url_path = st.tabs(["Length","Characters", "Abnormal URLs", "HTTPS Scheme","Numbers","IP Address", "Doamin", "Sub Domain", "Top Level Domain","FLD", "Short URL", "URL path Length"])
